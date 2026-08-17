@@ -8,10 +8,6 @@ const stats = [
     label: "Annual electric cost per square foot",
   },
   {
-    value: "12 YRS",
-    label: "Real estate tax abatement for tenants",
-  },
-  {
     value: "18,000 SF",
     label: "Typical floor plate, column-light layouts",
   },
@@ -29,7 +25,7 @@ export default function DataStrip() {
             LEED &middot; USGBC CERTIFIED
           </span>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-paper/10 rounded-sm overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10 rounded-sm overflow-hidden">
           {stats.map((s) => (
             <div key={s.label} className="bg-graphite px-5 py-8 md:px-6 md:py-10">
               <div className="font-mono text-3xl md:text-4xl text-leed mb-3">

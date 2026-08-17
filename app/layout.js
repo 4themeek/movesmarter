@@ -26,7 +26,7 @@ const mono = localFont({
 export const metadata = {
   title: "Move Smarter | LEED-Certified Office Space, Downtown Cincinnati",
   description:
-    "LEED-certified office loft space in downtown Cincinnati with tenant-driven customization from day one. Lower energy costs, a 12-year tax abatement, and a build-out shaped around how your team actually works.",
+    "LEED-certified office loft space in downtown Cincinnati with tenant-driven customization from day one. Lower energy costs and a build-out shaped around how your team actually works.",
   metadataBase: new URL("https://www.movesmarter.fyi"),
   openGraph: {
     title: "Move Smarter | LEED-Certified Office Space, Downtown Cincinnati",

@@ -15,16 +15,14 @@ export default function Pillars() {
               performance in mind &mdash; high-performance glazing, an
               upgraded envelope, and efficient systems that cut utility
               spend and environmental impact together. That efficiency
-              shows up directly on your P&amp;L, and the LEED certification
-              behind it carries a 12-year real estate tax abatement for
-              tenants.
+              shows up directly on your P&amp;L, backed by LEED
+              certification.
             </p>
             <ul className="space-y-3">
               {[
                 "Floor-to-ceiling glass with high-performance glazing",
                 "Efficient lighting and mechanical systems throughout",
                 "Reduced water consumption, healthier indoor air",
-                "12-year tax abatement tied to LEED status",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-graphite/80">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-leed shrink-0" />
