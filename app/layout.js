@@ -39,10 +39,8 @@ export const metadata = {
   },
 };
 
-// TODO: Replace with your StatCounter project ID + security code from
-// statcounter.com > My Projects > [project] > Install Code
-const STATCOUNTER_PROJECT = "REPLACE_WITH_PROJECT_ID";
-const STATCOUNTER_SECURITY = "REPLACE_WITH_SECURITY_CODE";
+const STATCOUNTER_PROJECT = 13351736;
+const STATCOUNTER_SECURITY = "3fc519e8";
 
 export default function RootLayout({ children }) {
   return (
@@ -62,6 +60,23 @@ export default function RootLayout({ children }) {
           src="https://www.statcounter.com/counter/counter.js"
           strategy="afterInteractive"
         />
+        <noscript>
+          <div className="statcounter">
+            <a
+              title="Web Analytics Made Easy - Statcounter"
+              href="https://statcounter.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="statcounter"
+                src={`https://c.statcounter.com/${STATCOUNTER_PROJECT}/0/${STATCOUNTER_SECURITY}/1/`}
+                alt="Web Analytics Made Easy - Statcounter"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </a>
+          </div>
+        </noscript>
       </body>
     </html>
   );
