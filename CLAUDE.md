@@ -63,8 +63,8 @@ identifiers.
   energy use, $1/SF electric) are sourced from public info on the reference
   building and should be verified (the "12-year tax abatement" claim was
   removed sitewide 2026-08-16 pending verification)
-- [ ] Point `www.smartermove.fyi` at the Vercel project under Project
-  Settings → Domains
+- [x] `www.smartermove.fyi` pointed at the Vercel project and live
+  (confirmed 2026-08-26)
 - [ ] Optional: add a second Formspree recipient either via the Formspree
   dashboard or `NEXT_PUBLIC_LEAD_CC_EMAIL`
 
