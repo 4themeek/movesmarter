@@ -126,7 +126,7 @@ export default function ContactForm() {
         <Field
           label="Square footage needed"
           name="squareFootage"
-          placeholder={"e.g. 3,000\u20135,000 SF"}
+          placeholder={"e.g. 3,500\u201318,000 SF"}
           value={values.squareFootage}
           onChange={handleChange}
         />
