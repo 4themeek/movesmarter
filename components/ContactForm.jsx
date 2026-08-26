@@ -7,6 +7,13 @@ const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
 // inbox by default; set this env var to also CC a second address.
 const CC_EMAIL = process.env.NEXT_PUBLIC_LEAD_CC_EMAIL || "";
 
+const HELP_OPTIONS = [
+  "Schedule a tour",
+  "Send floor plans",
+  "Send pricing & availability",
+  "Connect me with a broker",
+];
+
 const initialState = {
   name: "",
   company: "",
@@ -14,6 +21,7 @@ const initialState = {
   phone: "",
   squareFootage: "",
   timeline: "",
+  help: [],
   message: "",
 };
 
@@ -24,6 +32,14 @@ export default function ContactForm() {
   function handleChange(e) {
     const { name, value } = e.target;
     setValues((prev) => ({ ...prev, [name]: value }));
+  }
+
+  function handleHelpChange(e) {
+    const { value, checked } = e.target;
+    setValues((prev) => ({
+      ...prev,
+      help: checked ? [...prev.help, value] : prev.help.filter((v) => v !== value),
+    }));
   }
 
   async function handleSubmit(e) {
@@ -121,6 +137,30 @@ export default function ContactForm() {
           value={values.timeline}
           onChange={handleChange}
         />
+      </div>
+
+      <div>
+        <span className="block text-sm font-medium text-graphite/80 mb-2">
+          How can we help?
+        </span>
+        <div className="grid grid-cols-2 gap-x-4 gap-y-2.5">
+          {HELP_OPTIONS.map((opt) => (
+            <label
+              key={opt}
+              className="flex items-center gap-2 text-sm text-graphite/80 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                name="help"
+                value={opt}
+                checked={values.help.includes(opt)}
+                onChange={handleHelpChange}
+                className="h-4 w-4 rounded-sm border-steel/40 text-leed focus-ring"
+              />
+              {opt}
+            </label>
+          ))}
+        </div>
       </div>
 
       <div>
