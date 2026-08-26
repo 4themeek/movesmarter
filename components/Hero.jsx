@@ -12,11 +12,11 @@ const specs = [
 const heroImages = [
   {
     src: "/hero/Front1.jpg",
-    alt: "Front exterior of the LEED-certified office loft building, downtown Cincinnati",
+    alt: "Street-level entrance at 310 Culvert Street",
   },
   {
     src: "/hero/SkyLoftViewWest.jpg",
-    alt: "Street-level entrance at 310 Culvert Street",
+    alt: "SkyLoft rooftop deck with downtown Cincinnati skyline views",
   },
   {
     src: "/hero/livrm1.jpg",
