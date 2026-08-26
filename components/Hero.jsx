@@ -1,12 +1,39 @@
-import Image from "next/image";
 import Link from "next/link";
 import Nav from "./Nav";
+import HeroSlider from "./HeroSlider";
 
 const specs = [
   { label: "5 FLOORS" },
   { label: "100,000 SF" },
   { label: "11\u2013 15\u2019 CLG HT" },
   { label: "LEED CERTIFIED" },
+];
+
+const heroImages = [
+  {
+    src: "/hero/Front1.png",
+    alt: "Front exterior of the LEED-certified office loft building, downtown Cincinnati",
+  },
+  {
+    src: "/hero/SkyLoftViewWest.png",
+    alt: "Street-level entrance at 310 Culvert Street",
+  },
+  {
+    src: "/hero/livrm1.png",
+    alt: "Upward view of the building facade above the Living Room creative meeting space",
+  },
+  {
+    src: "/hero/MtAdam1.png",
+    alt: "View of the Cincinnati riverfront and hillside from the building",
+  },
+  {
+    src: "/hero/OfficeCMA.png",
+    alt: "Interior office space with floor-to-ceiling windows overlooking the riverfront",
+  },
+  {
+    src: "/hero/SKYloft-EDGE-3new.png",
+    alt: "Team collaborating on the rooftop terrace at The Edge",
+  },
 ];
 
 export default function Hero() {
@@ -17,14 +44,7 @@ export default function Hero() {
     >
       <Nav />
 
-      <Image
-        src="/edge.jpg"
-        alt="LEED-certified office loft building in downtown Cincinnati, all-glass exterior"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      <HeroSlider images={heroImages} />
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/25 to-graphite/10"

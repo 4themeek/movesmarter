@@ -26,6 +26,16 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
+
+  /* HeroSlider: keep the crossfade (no blank flash between slides), but
+     drop the Ken Burns scale/pan entirely. */
+  .kb-fade {
+    transition-duration: 1300ms !important;
+  }
+  .kb-zoom {
+    animation: none !important;
+    transform: none !important;
+  }
 }
 
 .focus-ring {
