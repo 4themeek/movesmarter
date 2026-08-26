@@ -22,7 +22,11 @@ export default function HeroSlider({ images, overlay = false, className = "" }) 
   // Per-slide "activation key" — only the slide entering view gets a new
   // value, which remounts just its zoom layer so the Ken Burns animation
   // restarts from 0% every time that slide comes back around. Slides that
-  // are merely fading out keep their existing key (no remount, no jump).
+  // are merely fading out keep their existing key (no remount) — the
+  // animate-kb-* class must stay applied unconditionally (not gated on
+  // isActive) so animation-fill-mode: forwards holds the zoomed end state
+  // while it fades out, instead of the transform snapping back to
+  // scale(1) the instant the class would otherwise be removed.
   const [activationKeys, setActivationKeys] = useState(() =>
     images.map((_, i) => (i === 0 ? 0 : -1))
   );
@@ -63,9 +67,7 @@ export default function HeroSlider({ images, overlay = false, className = "" }) 
           >
             <div
               key={`${i}-${activationKeys[i]}`}
-              className={`kb-zoom absolute inset-0 ${variant.origin} ${
-                isActive ? variant.animate : ""
-              }`}
+              className={`kb-zoom absolute inset-0 ${variant.origin} ${variant.animate}`}
             >
               <Image
                 src={img.src}
