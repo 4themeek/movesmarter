@@ -53,6 +53,7 @@ export default function Pillars() {
                 "Direct access to the building's design and architecture team",
                 "Column-light floor plates, 11\u201315\u2019 ceilings",
                 "Layouts shaped around your workflow, not a template suite",
+                "Suites that scale as your headcount grows",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-graphite/80">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-glass shrink-0" />

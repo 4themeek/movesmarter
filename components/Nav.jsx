@@ -19,6 +19,12 @@ export default function Nav() {
           >
             The Space
           </a>
+          <a
+            href="/#amenities"
+            className="hidden sm:inline text-sm text-paper/85 hover:text-paper transition-colors focus-ring rounded"
+          >
+            Amenities
+          </a>
           <Link
             href="/contact"
             className="text-sm font-medium bg-leed text-paper px-4 py-2 rounded-sm hover:bg-leed/90 transition-colors focus-ring"
