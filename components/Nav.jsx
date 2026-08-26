@@ -1,15 +1,11 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Nav() {
   return (
     <header className="absolute top-0 left-0 right-0 z-20">
       <div className="mx-auto max-w-7xl px-6 md:px-10 flex items-center justify-between h-20">
-        <Link
-          href="/"
-          className="font-display font-semibold text-lg tracking-wideish text-paper focus-ring rounded"
-        >
-          MOVE SMARTER
-        </Link>
+        <Logo />
         <nav className="flex items-center gap-8">
           <a
             href="/#sustainability"

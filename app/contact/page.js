@@ -1,6 +1,6 @@
-import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import Logo from "@/components/Logo";
 
 export const metadata = {
   title: "Contact | Move Smarter",
@@ -13,12 +13,7 @@ export default function ContactPage() {
     <main>
       <header className="bg-graphite pt-8 pb-16 md:pt-10 md:pb-24">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <Link
-            href="/"
-            className="font-display font-semibold text-lg tracking-wideish text-paper focus-ring rounded"
-          >
-            MOVE SMARTER
-          </Link>
+          <Logo />
           <p className="font-mono text-xs tracking-widest2 text-leed mt-10 mb-4">
             LET&rsquo;S TALK SPACE
           </p>
