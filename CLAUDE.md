@@ -1,10 +1,15 @@
-# CLAUDE.md — movesmarter.fyi
+# CLAUDE.md — smartermove.fyi
 
 Lead-capture landing site for commercial office space, differentiated on
 LEED sustainability and up-front tenant improvement (TI) customization.
-Built for domain `www.movesmarter.fyi`. Content is modeled on a real
+Built for domain `www.smartermove.fyi`. Content is modeled on a real
 building (The Edge Cincinnati, 310 Culvert St) but written generically —
 no exclusive representation claims are made in the copy.
+
+Note: the GitHub repo (`4themeek/movesmarter`) and Vercel project
+(`movesmarter`) keep the old `movesmarter` name — only user-facing text and
+URLs were updated to `smartermove.fyi` (2026-08-26), not the repo/project
+identifiers.
 
 ## Stack
 
@@ -34,6 +39,10 @@ no exclusive representation claims are made in the copy.
 - `public/edge.jpg` — used only as the OpenGraph/social-share image now
   (`app/layout.js`)
 - `public/hero/*.jpg` — the 6 HeroSlider photos, compressed to <400KB each
+- `components/Logo.jsx` — the logo (background keyed transparent from the
+  source PNG) on a small light card, used in place of text in `Nav.jsx` and
+  the contact page header; `Footer.jsx` still uses plain text ("SMARTER
+  MOVE"), not the image
 
 ## Design tokens (Tailwind config)
 
@@ -43,16 +52,19 @@ no exclusive representation claims are made in the copy.
 
 ## Outstanding / TODO
 
-- [ ] Create Formspree form (account: themeek@hush.com), set
-  `NEXT_PUBLIC_FORMSPREE_ID` in `.env.local` and in Vercel env vars
-- [ ] Create StatCounter project, replace `REPLACE_WITH_PROJECT_ID` and
-  `REPLACE_WITH_SECURITY_CODE` in `app/layout.js`
+- [x] Formspree form created and wired up (`NEXT_PUBLIC_FORMSPREE_ID`,
+  form ID `xrpgzbdq`) — set locally in `.env.local` and needs to also be set
+  in Vercel's env vars for production
+- [x] StatCounter project wired up (2026-08-16, project ID 13351736)
+- [x] Pushed to `4themeek/movesmarter` on GitHub, imported into Vercel
+  (Framework Preset must stay "Next.js" — see the deploy note below)
 - [ ] Confirm final copy/specs against the actual listing before launch —
   current numbers (100,000 SF, 18,000 SF floors, 11–15' ceilings, ~50%
-  energy use, $1/SF electric, 12-yr tax abatement) are sourced from public
-  info on the reference building and should be verified
-- [ ] Push to a new GitHub repo (suggest `4themeek/movesmarter`), import
-  into Vercel, point `www.movesmarter.fyi` at it
+  energy use, $1/SF electric) are sourced from public info on the reference
+  building and should be verified (the "12-year tax abatement" claim was
+  removed sitewide 2026-08-16 pending verification)
+- [ ] Point `www.smartermove.fyi` at the Vercel project under Project
+  Settings → Domains
 - [ ] Optional: add a second Formspree recipient either via the Formspree
   dashboard or `NEXT_PUBLIC_LEAD_CC_EMAIL`
 

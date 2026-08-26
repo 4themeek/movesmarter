@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-graphite py-10">
       <div className="mx-auto max-w-7xl px-6 md:px-10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <span className="font-display font-semibold text-sm tracking-wideish text-paper/80">
-          MOVE SMARTER
+          SMARTER MOVE
         </span>
         <p className="text-paper/40 text-xs text-center sm:text-left">
           310 Culvert Street area &middot; Downtown Cincinnati, OH

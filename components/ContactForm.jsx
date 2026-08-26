@@ -69,7 +69,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
-      <input type="hidden" name="_subject" value="New lead from movesmarter.fyi" />
+      <input type="hidden" name="_subject" value="New lead from smartermove.fyi" />
       {CC_EMAIL && <input type="hidden" name="_cc" value={CC_EMAIL} />}
 
       <div className="grid sm:grid-cols-2 gap-5">

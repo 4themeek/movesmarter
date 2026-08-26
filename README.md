@@ -1,4 +1,4 @@
-# Move Smarter (movesmarter.fyi)
+# Smarter Move (smartermove.fyi)
 
 Lead-capture landing site for LEED-certified, tenant-customizable office
 space in downtown Cincinnati. Next.js 15 (App Router), Tailwind CSS, deployed
@@ -17,7 +17,7 @@ on Vercel.
 
 1. Go to [formspree.io](https://formspree.io) and sign up (or log in) with
    **themeek@hush.com**.
-2. Create a new form. Name it something like "Move Smarter — Site Leads."
+2. Create a new form. Name it something like "Smarter Move — Site Leads."
 3. In the form's settings, set the notification email to
    **themeek@hush.com**.
 4. Copy the form ID from the form's endpoint URL — it looks like
@@ -32,7 +32,7 @@ also work without touching the code.
 
 ## 2. Set up StatCounter
 
-1. Log into StatCounter and create a new project for `movesmarter.fyi`.
+1. Log into StatCounter and create a new project for `smartermove.fyi`.
 2. From **My Projects → [project] → Install Code**, grab your **Project ID**
    and **Security Code**.
 3. Open `app/layout.js` and replace:
@@ -66,7 +66,7 @@ When you deploy on Vercel, add these same two variables under
    Upload files").
 2. In Vercel, "Add New Project" → import that GitHub repo.
 3. Add the environment variables from step 3 above.
-4. Point your `www.movesmarter.fyi` domain at the Vercel project under
+4. Point your `www.smartermove.fyi` domain at the Vercel project under
    **Project Settings → Domains**.
 
 **Local development (optional):**

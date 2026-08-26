@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
 
 export const metadata = {
-  title: "Contact | Move Smarter",
+  title: "Contact | Smarter Move",
   description:
     "Tell us your square footage, timeline, and priorities. We'll follow up with availability and a tenant improvement estimate.",
 };
