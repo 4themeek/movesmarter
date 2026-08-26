@@ -17,20 +17,23 @@ no exclusive representation claims are made in the copy.
 
 ## Structure
 
-- `app/page.js` — homepage: Intro (poster) → Hero (building photo) →
-  DataStrip (stats) → Pillars (sustainability/customization) → Location →
-  CTA → Footer
+- `app/page.js` — homepage: Hero (Ken Burns photo slider) → DataStrip
+  (stats) → Pillars (sustainability/customization) → Location → CTA →
+  Footer. There was previously an `Intro` full-viewport poster shown before
+  Hero on page load; it's been removed (2026-08-26) so Hero is the first
+  thing visitors see.
 - `app/contact/page.js` — lead form page
-- `components/Intro.jsx` — full-viewport poster shown on page load
-  ("Your office is fine. Until you see what your office could be."),
-  scrolls to `#explore` (the Hero section) on click
 - `components/Hero.jsx` — building photo hero with an architectural "spec
-  rail" annotation (floors / SF / ceiling height / LEED)
+  rail" annotation (floors / SF / ceiling height / LEED); background is
+  `components/HeroSlider.jsx`, a client component that cycles 6 photos with
+  a Ken Burns scale+pan and crossfade (see that file for the animation
+  mechanics)
 - `components/ContactForm.jsx` — client component posting to Formspree via
   `NEXT_PUBLIC_FORMSPREE_ID`; supports an optional `_cc` second recipient
   via `NEXT_PUBLIC_LEAD_CC_EMAIL`
-- `public/edge.jpg` — building hero photo
-- `public/office-is-fine.png` — intro poster image
+- `public/edge.jpg` — used only as the OpenGraph/social-share image now
+  (`app/layout.js`)
+- `public/hero/*.jpg` — the 6 HeroSlider photos, compressed to <400KB each
 
 ## Design tokens (Tailwind config)
 

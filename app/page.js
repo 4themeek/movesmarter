@@ -1,4 +1,3 @@
-import Intro from "@/components/Intro";
 import Hero from "@/components/Hero";
 import DataStrip from "@/components/DataStrip";
 import Pillars from "@/components/Pillars";
@@ -9,7 +8,6 @@ import Footer from "@/components/Footer";
 export default function HomePage() {
   return (
     <main>
-      <Intro />
       <Hero />
       <DataStrip />
       <Pillars />

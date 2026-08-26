@@ -11,27 +11,27 @@ const specs = [
 
 const heroImages = [
   {
-    src: "/hero/Front1.png",
+    src: "/hero/Front1.jpg",
     alt: "Front exterior of the LEED-certified office loft building, downtown Cincinnati",
   },
   {
-    src: "/hero/SkyLoftViewWest.png",
+    src: "/hero/SkyLoftViewWest.jpg",
     alt: "Street-level entrance at 310 Culvert Street",
   },
   {
-    src: "/hero/livrm1.png",
+    src: "/hero/livrm1.jpg",
     alt: "Upward view of the building facade above the Living Room creative meeting space",
   },
   {
-    src: "/hero/MtAdam1.png",
+    src: "/hero/MtAdam1.jpg",
     alt: "View of the Cincinnati riverfront and hillside from the building",
   },
   {
-    src: "/hero/OfficeCMA.png",
+    src: "/hero/OfficeCMA.jpg",
     alt: "Interior office space with floor-to-ceiling windows overlooking the riverfront",
   },
   {
-    src: "/hero/SKYloft-EDGE-3new.png",
+    src: "/hero/SKYloft-EDGE-3new.jpg",
     alt: "Team collaborating on the rooftop terrace at The Edge",
   },
 ];
