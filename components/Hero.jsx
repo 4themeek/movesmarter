@@ -11,28 +11,28 @@ const specs = [
 
 const heroImages = [
   {
-    src: "/hero/Front1.jpg",
-    alt: "Street-level entrance at 310 Culvert Street",
-  },
-  {
-    src: "/hero/SkyLoftViewWest.jpg",
-    alt: "SkyLoft rooftop deck with downtown Cincinnati skyline views",
-  },
-  {
     src: "/hero/livrm1.jpg",
     alt: "Upward view of the building facade above the Living Room creative meeting space",
   },
   {
-    src: "/hero/MtAdam1.jpg",
-    alt: "View of the Cincinnati riverfront and hillside from the building",
+    src: "/hero/SKYloft-EDGE-3new.jpg",
+    alt: "Team collaborating on the rooftop terrace at The Edge",
   },
   {
     src: "/hero/OfficeCMA.jpg",
     alt: "Interior office space with floor-to-ceiling windows overlooking the riverfront",
   },
   {
-    src: "/hero/SKYloft-EDGE-3new.jpg",
-    alt: "Team collaborating on the rooftop terrace at The Edge",
+    src: "/hero/MtAdam1.jpg",
+    alt: "View of the Cincinnati riverfront and hillside from the building",
+  },
+  {
+    src: "/hero/SkyLoftViewWest.jpg",
+    alt: "SkyLoft rooftop deck with downtown Cincinnati skyline views",
+  },
+  {
+    src: "/hero/Front1.jpg",
+    alt: "Street-level entrance at 310 Culvert Street",
   },
 ];
 
