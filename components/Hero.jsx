@@ -73,7 +73,7 @@ export default function Hero() {
           DOWNTOWN CINCINNATI &middot; LEED CERTIFIED OFFICE LOFT
         </p>
         <h1 className="font-display font-semibold text-paper text-4xl sm:text-5xl md:text-6xl leading-[1.05] max-w-3xl">
-          Space that pays you back.
+          Work better &mdash; SkyLoft meetings, concierge ease.
         </h1>
         <p className="text-paper/85 text-lg md:text-xl max-w-xl mt-5 leading-relaxed">
           A LEED-certified loft building on the riverfront, built out around
