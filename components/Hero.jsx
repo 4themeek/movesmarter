@@ -32,7 +32,7 @@ const heroImages = [
   },
   {
     src: "/hero/Front1.jpg",
-    alt: "Street-level entrance at 310 Culvert Street",
+    alt: "Concierge front desk in The Edge lobby, staffed for package and visitor handling",
   },
 ];
 
