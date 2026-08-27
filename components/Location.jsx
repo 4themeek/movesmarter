@@ -25,7 +25,7 @@ export default function Location() {
           04 &mdash; LOCATION
         </span>
         <h3 className="font-display font-semibold text-2xl md:text-3xl mt-4 mb-12 max-w-xl">
-          Downtown Cincinnati, on the river
+          Downtown Cincinnati, near the river
         </h3>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10">
           {points.map((p) => (
