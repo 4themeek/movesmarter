@@ -8,7 +8,7 @@ export default function Footer() {
           SMARTER MOVE
         </span>
         <p className="text-paper/40 text-xs text-center sm:text-left">
-          310 Culvert Street area &middot; Downtown Cincinnati, OH
+          310 Culvert Street, Downtown Cincinnati, Ohio 45202
         </p>
         <Link
           href="/contact"
